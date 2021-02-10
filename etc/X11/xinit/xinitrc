@@ -1,5 +1,5 @@
 #!/bin/sh
 
-nvidia-settings --assign "[gpu:0]/GPUPowerMizerMode=1" --assign "[gpu:0]/GPUGraphicsClockOffset[3]=200" --assign "[gpu:0]/GPUMemoryTransferRateOffset[3]=1000"
+nvidia-settings --assign "[gpu:0]/GPUGraphicsClockOffset[3]=200" --assign "[gpu:0]/GPUMemoryTransferRateOffset[3]=1000"
 
 sleep infinity
