@@ -8,6 +8,8 @@ RUN apt update -y && DEBIAN_FRONTEND=noninteractive apt install xorg xserver-xor
 
 COPY etc /etc
 
+RUN touch ~/.Xauthority
+
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES all
 ENV DISPLAY=:0
